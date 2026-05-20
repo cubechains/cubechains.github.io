@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CubeChains | Mobile Applications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #3b82f6;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--accent); }
+        p { color: var(--text-muted); font-size: 1.1rem; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            max-width: 1000px;
+            width: 100%;
+        }
+        .card {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: transform 0.2s;
+        }
+        .card:hover { transform: translateY(-5px); }
+        .card h2 { margin-top: 0; font-size: 1.4rem; }
+        .card p { font-size: 0.95rem; line-height: 1.5; }
+        .links { margin-top: 1.5rem; display: flex; gap: 1rem; }
+        .links a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>CubeChains</h1>
+    <p>Privacy-First & High-Performance Mobile Solutions</p>
+</header>
+
+<div class="grid">
+    <!-- App 1 -->
+    <div class="card">
+        <h2>Content AI</h2>
+        <p>A production-ready application optimizing local LLMs for on-device execution and offline AI features.</p>
+        <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.get.ai" target="_blank">Play Store</a>
+            <a href="/ContentAI/privacy-policy/">Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- App 2 -->
+    <div class="card">
+        <h2>AI Fitness Alarm</h2>
+        <p>Wake up early with smart, motion-detected step counting and local camera verification to start your mornings.</p>
+        <div class="links">
+            <a href="https://play.google.com/store/apps/details?id=com.ai.fitness" target="_blank">Play Store</a>
+            <a href="/AiFitnessAlarm/privacy-policy/">Privacy Policy</a>
+        </div>
+    </div>
+
+    <!-- App 3 -->
+    <div class="card">
+        <h2>True Friend Dog App</h2>
+        <p>Your companion tracker and interactive pet manager built natively for dog lovers.</p>
+        <div class="links">
+            <a href="#" target="_blank">Play Store</a>
+            <a href="/TrueFriendDog/privacy-policy/">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
